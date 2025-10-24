@@ -1,0 +1,220 @@
+/* General */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/images/back2.jpeg.jpeg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6fa9;
+    transform: scale(1.05);
+}
+
+.btn.cart {
+    background-color: #333;
+}
+
+.btn.cart:hover {
+    background-color: #555;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 260px;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.card-info p {
+    color: #ff4081;
+    font-weight: bold;
+}
+
+.card-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Image Sections */
+.image-section {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+}
+
+.section2 {
+    background-image: url('https://i.imgur.com/7CDBF7G.jpg');
+}
+
+.section3 {
+    background-image: url('https://i.imgur.com/UnV3GKu.jpg');
+}
+
+.section4 {
+    background-image: url('https://i.imgur.com/tZc5v8r.jpg');
+}
+
+/* Contact Section */
+.contact-section {
+    background: #fff4f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff4081;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form button {
+    align-self: center;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff4081;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
